@@ -15,5 +15,10 @@ namespace Welcome.View
         {
             return $"Welcome \nUser: {this._viewModel.Name}\nRole: {this._viewModel.Role}\nEmail: {this._viewModel.Email}";
         }
+
+        public string DysplayFacoltyNumber()
+        {
+            return this._viewModel.Role == Others.UserRolesEnum.STUDENT ? $"{this._viewModel.Name}`s faculty number: {this._viewModel.FacultyNumber}" : "A user cannot have a faculty number if he/she is not a student!";
+        }
     }
 }

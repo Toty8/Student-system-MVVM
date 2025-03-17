@@ -23,10 +23,10 @@ namespace Welcome.ViewModel
             set { this._user.Password = value; }
         }
 
-        public string FacoltyNumber
+        public string FacultyNumber
         {
-            get { return this._user.FacoltyNumber; }
-            set { this._user.FacoltyNumber = value; }
+            get { return this._user.FacultyNumber; }
+            set { this._user.FacultyNumber = value; }
         }
         public string Email
         {

@@ -4,11 +4,11 @@ namespace Welcome.Model
 {
     public class User
     {
-        public User(string name, string password, string facoltyNumber, string email, UserRolesEnum role)
+        public User(string name, string password, string facultyNumber, string email, UserRolesEnum role)
         {
             this.Name = name;
             this.Password = password;
-            this.FacoltyNumber = facoltyNumber;
+            this.FacultyNumber = facultyNumber;
             this.Email = email;
             this.Role = role;
         }
@@ -17,7 +17,7 @@ namespace Welcome.Model
 
         public string Password { get; set; }
 
-        public string FacoltyNumber { get; set; }
+        public string FacultyNumber { get; set; }
 
         public string Email { get; set; }
 

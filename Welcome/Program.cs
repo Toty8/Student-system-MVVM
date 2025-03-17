@@ -8,10 +8,11 @@ namespace Welcome
     {
         static void Main(string[] args)
         {
-            User user = new User("name", "password", "facoltyNumber", "email", Others.UserRolesEnum.ADMIN);
+            User user = new User("name", "password", "facoltyNumber", "email", Others.UserRolesEnum.STUDENT);
             UserViewModel viewModel = new UserViewModel(user);
             UserView view = new UserView(viewModel);
             Console.WriteLine(view.Display());
+            Console.WriteLine(view.DysplayFacoltyNumber());
         }
     }
 }
