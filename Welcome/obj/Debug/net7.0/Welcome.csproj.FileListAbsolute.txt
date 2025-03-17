@@ -1,0 +1,15 @@
+C:\Users\MSuser\source\repos\PS_42_Vasil\Welcome\bin\Debug\net7.0\Welcome.exe
+C:\Users\MSuser\source\repos\PS_42_Vasil\Welcome\bin\Debug\net7.0\Welcome.deps.json
+C:\Users\MSuser\source\repos\PS_42_Vasil\Welcome\bin\Debug\net7.0\Welcome.runtimeconfig.json
+C:\Users\MSuser\source\repos\PS_42_Vasil\Welcome\bin\Debug\net7.0\Welcome.dll
+C:\Users\MSuser\source\repos\PS_42_Vasil\Welcome\bin\Debug\net7.0\Welcome.pdb
+C:\Users\MSuser\source\repos\PS_42_Vasil\Welcome\obj\Debug\net7.0\Welcome.csproj.AssemblyReference.cache
+C:\Users\MSuser\source\repos\PS_42_Vasil\Welcome\obj\Debug\net7.0\Welcome.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSuser\source\repos\PS_42_Vasil\Welcome\obj\Debug\net7.0\Welcome.AssemblyInfoInputs.cache
+C:\Users\MSuser\source\repos\PS_42_Vasil\Welcome\obj\Debug\net7.0\Welcome.AssemblyInfo.cs
+C:\Users\MSuser\source\repos\PS_42_Vasil\Welcome\obj\Debug\net7.0\Welcome.csproj.CoreCompileInputs.cache
+C:\Users\MSuser\source\repos\PS_42_Vasil\Welcome\obj\Debug\net7.0\Welcome.dll
+C:\Users\MSuser\source\repos\PS_42_Vasil\Welcome\obj\Debug\net7.0\refint\Welcome.dll
+C:\Users\MSuser\source\repos\PS_42_Vasil\Welcome\obj\Debug\net7.0\Welcome.pdb
+C:\Users\MSuser\source\repos\PS_42_Vasil\Welcome\obj\Debug\net7.0\Welcome.genruntimeconfig.cache
+C:\Users\MSuser\source\repos\PS_42_Vasil\Welcome\obj\Debug\net7.0\ref\Welcome.dll
