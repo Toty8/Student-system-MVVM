@@ -13,6 +13,7 @@ namespace Welcome
             UserView view = new UserView(viewModel);
             Console.WriteLine(view.Display());
             Console.WriteLine(view.DysplayFacoltyNumber());
+            Console.WriteLine(viewModel.Password);
         }
     }
 }
