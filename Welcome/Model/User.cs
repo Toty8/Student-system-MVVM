@@ -22,7 +22,17 @@ namespace Welcome.Model
 
         public string Password 
         {
-            get { return this.password; }
+            get 
+            {
+                string decryptedValue = string.Empty;
+                int currCharValue;
+                foreach (var letter in this.password)
+                {
+                    currCharValue = letter + 18;
+                    decryptedValue += (char)currCharValue;
+                }
+                return decryptedValue; 
+            }
             set 
             {
                 string encryptedValue = string.Empty;
