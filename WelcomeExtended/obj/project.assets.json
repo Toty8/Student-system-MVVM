@@ -195,6 +195,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Welcome/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Welcome.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Welcome.dll": {}
+        }
       }
     }
   },
@@ -633,11 +643,17 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Welcome/1.0.0": {
+      "type": "project",
+      "path": "../Welcome/Welcome.csproj",
+      "msbuildProject": "../Welcome/Welcome.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Microsoft.Extensions.Logging >= 9.0.3"
+      "Microsoft.Extensions.Logging >= 9.0.3",
+      "Welcome >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -672,7 +688,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\MSuser\\source\\repos\\PS_42_Vasil\\Welcome\\Welcome.csproj": {
+              "projectPath": "C:\\Users\\MSuser\\source\\repos\\PS_42_Vasil\\Welcome\\Welcome.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
