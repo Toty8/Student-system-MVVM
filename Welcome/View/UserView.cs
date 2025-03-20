@@ -20,5 +20,10 @@ namespace Welcome.View
         {
             return this._viewModel.Role == Others.UserRolesEnum.STUDENT ? $"{this._viewModel.Name}`s faculty number: {this._viewModel.FacultyNumber}" : "A user cannot have a faculty number if he/she is not a student!";
         }
+
+        public Exception DisplayError()
+        {
+            throw new Exception("DispalyError exception!");
+        }
     }
 }
