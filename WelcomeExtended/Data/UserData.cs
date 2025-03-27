@@ -49,5 +49,14 @@ namespace WelcomeExtended.Data
 
             return ret != null ? true : false;
         }
+
+        public User GetUser(string name, string password)
+        {
+            var ret = (from user in _users
+                      where user.Name == name && user.Password == password
+                      select user).FirstOrDefault();
+
+            return ret;
+        }
     }
 }
