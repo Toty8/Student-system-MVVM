@@ -2,6 +2,8 @@
 using Welcome.Others;
 using Welcome.View;
 using Welcome.ViewModel;
+using WelcomeExtended.Data;
+using WelcomeExtended.Helpers;
 using static WelcomeExtended.Others.Delegates;
 
 namespace WelcomeExtended
@@ -12,13 +14,32 @@ namespace WelcomeExtended
         {
             try 
             {
-                var user = new User("TestName", "TestPassword", "TestFacoltyNumber", "TestEmail", UserRolesEnum.STUDENT);
-                var viewModel = new UserViewModel(user);
-                var view = new UserView(viewModel);
-                Console.WriteLine(view.Display());
-                Console.WriteLine(view.DysplayFacoltyNumber());
-                Console.WriteLine(viewModel.Password);
-                view.DisplayError();
+                UserData userData = new UserData();
+
+                User studentUser = new User("student", "123", "studentEmail@gmail.com", UserRolesEnum.STUDENT);
+                User teacherUser = new User("teacher", "1234", "teacherEmail@gmail.com", UserRolesEnum.PROFESSOR);
+                User adminUser = new User("admin", "12345", "adminEmail@gmail.com", UserRolesEnum.ADMIN);
+
+                userData.AddUser(studentUser);
+                userData.AddUser(teacherUser);
+                userData.AddUser(adminUser);
+
+                Console.WriteLine("Enter username:");
+                string name = Console.ReadLine();
+                Console.WriteLine("Enter password:");
+                string password = Console.ReadLine();
+
+                bool exists = userData.ValidateCredentials(name, password);
+
+                if (exists)
+                {
+                    User user = userData.GetUser(name, password);
+                    user.ToUserString();
+                }
+                else
+                {
+                    throw new Exception("User is not found!");
+                }
             }
             catch (Exception e)
             {

@@ -8,7 +8,7 @@ namespace Welcome
     {
         static void Main(string[] args)
         {
-            User user = new User("name", "password", "facoltyNumber", "email", Others.UserRolesEnum.STUDENT);
+            User user = new User("name", "password", "email", Others.UserRolesEnum.STUDENT);
             UserViewModel viewModel = new UserViewModel(user);
             UserView view = new UserView(viewModel);
             Console.WriteLine(view.Display());

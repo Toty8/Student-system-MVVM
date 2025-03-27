@@ -11,11 +11,10 @@ namespace Welcome.Model
         private string email;
         private DateTime expires;
         private UserRolesEnum role;
-        public User(string name, string password, string facultyNumber, string email, UserRolesEnum role)
+        public User(string name, string password, string email, UserRolesEnum role)
         {
             this.Name = name;
             this.Password = password;
-            this.FacultyNumber = facultyNumber;
             this.Email = email;
             this.Role = role;
         }
