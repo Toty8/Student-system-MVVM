@@ -52,11 +52,24 @@ namespace WelcomeExtended.Data
 
         public User GetUser(string name, string password)
         {
-            var ret = (from user in _users
+            var currUser = (from user in _users
                       where user.Name == name && user.Password == password
                       select user).FirstOrDefault();
 
-            return ret;
+            return currUser;
+        }
+
+        public void SetActive(string name, string expires)
+        {
+            DateTime temp;
+            if (DateTime.TryParse(expires, out temp))
+            {
+                var currUser = (from user in _users
+                                where user.Name == name
+                                select user).FirstOrDefault();
+
+                currUser.Expires = temp;
+            }
         }
     }
 }
