@@ -1,4 +1,5 @@
 ﻿using Welcome.Model;
+using Welcome.Others;
 
 namespace WelcomeExtended.Data
 {
@@ -70,6 +71,16 @@ namespace WelcomeExtended.Data
 
                 currUser.Expires = temp;
             }
+        }
+
+        public void AssignUserRole(string name, UserRolesEnum role)
+        {
+
+            var currUser = (from user in _users
+                            where user.Name == name
+                            select user).FirstOrDefault();
+
+            currUser.Role = role;
         }
     }
 }
