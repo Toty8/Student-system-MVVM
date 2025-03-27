@@ -10,7 +10,7 @@ namespace WelcomeExtended.Helpers
 
         }
 
-        public static void ValidateCredentials(this UserData userData, string name, string password)
+        public static bool ValidateCredentials(this UserData userData, string name, string password)
         {
 
             if (name == null || password == null)
@@ -19,7 +19,12 @@ namespace WelcomeExtended.Helpers
                 throw new Exception($"The {field} cannot be empty");
             }
 
-            userData.ValidateUser(name, password);
+            return userData.ValidateUser(name, password);
+        }
+
+        public static User GetUser(this UserData userData, string name, string password)
+        {
+            return userData.GetUser(name, password);
         }
     }
 }
