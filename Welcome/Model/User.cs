@@ -19,7 +19,7 @@ namespace Welcome.Model
             this.Role = role;
         }
 
-        public int Id { get; set; }
+        public virtual int Id { get; set; }
 
         public string Name { get; set; }
 
