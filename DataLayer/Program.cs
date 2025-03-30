@@ -1,10 +1,21 @@
-﻿namespace DataLayer
+﻿using DataLayer.Database;
+using DataLayer.Model;
+using Welcome.Others;
+
+namespace DataLayer
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            using (var context = new DatabaseContext())
+            {
+                context.Database.EnsureCreated();
+                context.Add<DatabaseUser>(new DatabaseUser("user", "password", "email", UserRolesEnum.STUDENT));
+                context.SaveChanges();
+                var users = context.Users.ToList();
+                Console.ReadKey();
+            }
         }
     }
 }
