@@ -7,6 +7,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <DataGrid ItemsSource="{Binding}" Name="student" AutoGenerateColumns="True"></DataGrid>        
+        <DataGrid ItemsSource="{Binding}" Name="students" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="#" IsReadOnly="True" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Names" IsReadOnly="True" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Role" IsReadOnly="True" Binding="{Binding Role}"/>
+                <DataGridTextColumn Header="Expires In" Binding="{Binding Expires}"/>
+            </DataGrid.Columns>
+        </DataGrid>        
     </Grid>
 </UserControl>
