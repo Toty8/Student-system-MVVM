@@ -16,6 +16,9 @@ namespace WpfExample
         public void Execute(object parameter)
         {
             MessageBox.Show("Hello, world!");
+
+            NamesWindow namesWindow = new NamesWindow();
+            namesWindow.Show();
         }
     }
 }
